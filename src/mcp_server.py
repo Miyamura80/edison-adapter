@@ -3,8 +3,13 @@ from fastmcp import FastMCP
 # Create the MCP server instance
 mcp = FastMCP("My Central MCP Server")
 
+from src.utils.decorators import private_tool_access, write_operation, untrusted_data
+
 # Define tools directly in this file
 @mcp.tool
+@private_tool_access(config_value=True)
+@write_operation(config_value=True)
+@untrusted_data
 def add(a: int, b: int) -> int:
     """Add two numbers"""
     return a + b

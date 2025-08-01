@@ -21,6 +21,8 @@ dependencies = [
     "pillow>=11.2.1",
     "google-genai>=1.15.0",
     "ty>=0.0.1a9",
+    "fastmcp>=2.10.6",
+    "pytest-asyncio>=0.23.7",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"

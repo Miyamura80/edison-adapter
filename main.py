@@ -1,10 +1,7 @@
-from global_config import global_config
-
+from src.mcp_server import run_server
 
 def main():
-    print("Hello world")
-    print(global_config.example_parent.example_child)
-
+    run_server()
 
 if __name__ == "__main__":
     main()

@@ -4,6 +4,11 @@ dot_global_config_health_check: true
 example_parent:
   example_child: "example_value"
 
+tool_configs:
+  add_tool_config:
+    private_tool_access: true
+    write_operation: true
+
 ########################################################
 # LLMs
 ########################################################

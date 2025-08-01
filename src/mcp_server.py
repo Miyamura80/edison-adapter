@@ -7,8 +7,8 @@ from src.utils.decorators import private_tool_access, write_operation, untrusted
 
 # Define tools directly in this file
 @mcp.tool
-@private_tool_access(config_value=True)
-@write_operation(config_value=True)
+@private_tool_access("add_tool_config")
+@write_operation("add_tool_config")
 @untrusted_data
 def add(a: int, b: int) -> int:
     """Add two numbers"""
